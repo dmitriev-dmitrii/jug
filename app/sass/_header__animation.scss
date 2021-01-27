@@ -1,0 +1,161 @@
+
+
+@mixin  animation-blocks-height
+{
+height: 30px;
+
+@media only screen and (min-width: 576px) {
+	height: 50px;
+}
+@media only screen and (min-width: 767px)
+{
+	height: 55px;
+}
+@media only screen and (min-width: 991px)
+{
+	height: 60px;
+}
+
+}
+
+
+
+.header__visual {
+position: relative;
+}
+
+.header__bg {
+	width: 270px;
+	height: 230px;
+	user-select: none;
+	object-fit: cover;
+	overflow: hidden;
+	z-index: 2;
+	position: absolute;
+	top: 58px;
+	right: -1px;
+}
+
+.header__animation {
+user-select: none;
+top: -70px;
+right: -120px;
+
+display: block;
+width: 300px;
+height: 250px;
+position: absolute;
+
+	transform: rotate(45deg);
+	overflow: hidden;
+
+}
+
+.header__animation-blocks {
+
+@include animation-blocks-height;
+	background-color: black;
+	position: absolute;
+
+	transform: translateY(-200%);
+	width: 100%;
+
+	animation: header__animation 10s linear infinite;
+
+	&:nth-child(2) {
+		animation-delay: 2s;
+	}
+	&:nth-child(3) {
+		animation-delay: 4s;
+	}
+	&:nth-child(4) {
+		animation-delay: 6s;
+	}
+	&:nth-child(5) {
+		animation-delay: 8s;
+	}
+}
+
+@keyframes header__animation {
+	0% {
+		transform: translateY(900%);
+
+	}
+	100% {
+		transform: translateY(-200%);
+	
+	}
+}
+
+
+@media only screen and (min-width: 576px) 
+{
+	.header__bg {
+		width: 400px;
+		height: 345px;
+		z-index: 2;
+		position: absolute;
+		top: 60px;
+		right: 0px;
+	}
+
+	.header__animation {
+
+			width: 500px;
+			height: 220px;
+
+		}
+}
+@media only screen and (min-width: 767px)
+{
+	.header__bg {
+		width: 420px;
+		height: 355px;
+		top: 60px;
+		right: 0px;
+	}
+
+	.header__animation {
+
+			width: 500px;
+			height: 250px;
+
+		}
+}
+@media only screen and (min-width: 991px)
+{
+	.header__bg {
+		width: 460px;
+		height: 385px;
+		top: 60px;
+		right: 0px;
+	}
+}
+
+@media only screen and (min-width: 1139px)
+{
+	.header__bg {
+		width: 450px;
+		height: 385px;
+		top: 60px;
+		right: 0px;
+
+	}
+}
+@media only screen and (min-width: 1365px)
+{
+	.header__animation {
+		user-select: none;
+		
+		top: -50px;
+		right: 0px;
+		width: 450px;
+		height: 400px;
+	}
+
+	.header__bg {
+		width: 600px;
+		height: 520px;
+		top: 60px;
+	}
+}

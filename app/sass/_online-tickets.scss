@@ -1,0 +1,120 @@
+.online-tickets {
+margin-top: 45px;
+}
+
+.online-tickets__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.online-tickets__item {
+box-sizing: border-box;
+margin: 20px 0;
+padding:0  20px;
+background: #FFFFFF;
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+border-radius: 15px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+position: relative;
+
+min-height: 365px;
+width: 100%;
+&::before
+{
+	position: absolute;
+	content: 'онлайн';
+	top: 20px;
+	left: 30px;
+
+
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 15px;
+
+}
+&::after
+{
+	position: absolute;
+	content: url(../img/geo_icon.svg);
+	top: 20px;
+	left: 15px;
+width: 15px;
+height: 15px;
+background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+.online-tickets__item-img {
+	background-image: url(../img/online-ticket__bg.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 185px;
+	height: 185px;
+}
+.online-tickets__item-title {
+	@include titles-font;
+	align-self: flex-start;
+}
+.online-tickets__item-subtitle {
+	@include regular-font;
+align-self: flex-start;
+}
+.online-tickets__item-data {
+	@include regular-font;
+	color: #000000;
+	align-self: flex-start;
+	margin-top: 20px;
+}
+.online-tickets__item-button {
+font-size: 11px;
+line-height: 13px;
+text-align: center;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+border-radius: 24px;
+color: rgba(0, 0, 0, 0.7);
+height: 35px;
+width: 105px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+
+@media only screen and (min-width: 576px) 
+{
+
+	.online-tickets__list {
+
+		justify-content: space-between;
+	}
+
+	.online-tickets__item {
+		margin: 10px;
+		width: 45%;
+		}
+}
+
+@media only screen and (min-width: 767px)
+{
+
+}
+@media only screen and (min-width: 1139px)
+
+{
+
+	.online-tickets__list {
+
+		justify-content: space-evenly;
+	}
+
+	.online-tickets__item {
+		margin: 10px;
+		width: 23%;
+		}
+}

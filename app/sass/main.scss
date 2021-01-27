@@ -1,0 +1,339 @@
+
+html
+{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding:0 ;
+
+
+}
+h1,h2,h3,h4,h5,h6,p
+{
+	margin: 0;
+}
+ul,li
+{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+input {
+
+transition: 0.4s all  ease-in-out;
+
+}
+
+input:invalid {
+	box-shadow: 0 0 3px 2px  red;
+	-webkit-text-stroke:1px ;
+transition: 0.4s all  ease-in-out;
+border-color:red ;
+}
+
+input:focus:invalid {
+	box-shadow: 0 0 3px 2px  red;
+	border-color:red ;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+	display: block;
+transition: all 0.4s linear;
+	&:focus
+	{
+		text-shadow: 0 0.5px;
+text-decoration: underline;
+	}
+}
+button
+{
+	outline: none;
+	transition: box-shadow 0.2s;
+	&:focus
+{
+box-shadow: 0 2px 3px 1px grey;
+}
+&:active
+{
+	transform: scale(0.97);
+}
+}
+
+.contanier
+{
+	padding: 0 20px;
+	overflow: hidden;
+}
+
+.offer-buttons-wrapper
+{
+	display: flex;
+	margin: 2em 0;
+	justify-content: space-between;
+	width: 100%;
+}
+.offer-buttons-wrapper button
+{
+		min-width: 135px;
+		padding: 0.7em 2em;
+		outline: none;
+		border: none;
+		border-radius: 7px;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 150%;
+		font-size: 12px;
+		&:nth-child(1) {
+			background: #fbcb03;
+			color: #000000;
+
+		}
+		&:nth-child(2) {
+			background: #000000;
+			color: #ffffff;
+		}
+
+}
+
+
+@mixin regular-font {
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+
+	color: rgba(0, 0, 0, 0.7);
+
+	line-height: 150%;
+	font-size: 12px;
+@media only screen and (min-width: 576px) {
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 767px)
+{
+	font-size: 16px;
+}
+@media only screen and (min-width: 991px)
+{
+	font-size: 20px;
+}
+}
+
+@mixin titles-font {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2em;
+	color: #000000;
+
+	font-size: 20px;
+@media only screen and (min-width: 576px) {
+	font-size: 22px;
+}
+@media only screen and (min-width: 767px)
+{
+	font-size: 24px;
+}
+@media only screen and (min-width: 991px)
+{
+	font-size: 28px;
+}
+}
+
+
+
+
+
+.modal__presonal,
+.footer,.offer__button,
+.ticket-price__button,
+.online-tickets__item-button,
+.modal-answer__presonal,
+.modal__answer-personal 
+{
+font-size: 11px;
+}
+
+.btn
+{
+padding: 0.5em 2em;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 576px) 
+{
+	.modal__presonal,
+	.footer,.offer__button,
+	.ticket-price__button,
+	.online-tickets__item-button,
+	.modal-answer__presonal,
+	.modal__answer-personal 
+	{
+	font-size: 12px;
+	}
+	
+
+	.contanier
+	{
+		padding: 0 30px;
+	}
+	.offer-buttons-wrapper
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.offer-buttons-wrapper button
+{
+		font-size: 14px;
+		margin: 0.5em ;
+}
+}
+
+.hide-items
+{
+	position: absolute;
+    display: none;
+	transform: translateY(-150%) ;
+	user-select: none;
+	visibility: hidden;
+	opacity: 0;
+}
+.hide-items--active
+{
+	position: static;
+    display:block;
+	transform: translateY(-0%) ;
+	user-select:auto;
+	visibility: visible;
+	opacity: 1;
+	
+transition: all 0.4s linear;
+}
+.hide__btn
+{
+	margin: 3em auto;
+	display: block;
+	width: 172px;
+height: 35px;
+border: 1px solid rgba(0, 0, 0, 0.46);
+border-radius: 24px;
+outline: none;
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 17px;
+color: rgba(0, 0, 0, 0.67);
+}
+
+
+@media only screen and (min-width: 767px)
+{
+	.modal__presonal,
+.footer,.offer__button,
+.ticket-price__button,
+.online-tickets__item-button,
+.modal-answer__presonal,
+.modal__answer-personal 
+{
+font-size: 13px;
+}
+
+	.contanier
+	{
+		padding: 0 60px;
+
+	}
+	.offer-buttons-wrapper button
+{
+		font-size: 16px;
+		margin: 1em ;
+}
+}
+@media only screen and (min-width: 991px)
+{
+	.modal__presonal,
+.footer,.offer__button,
+.ticket-price__button,
+.online-tickets__item-button,
+.modal-answer__presonal,
+.modal__answer-personal 
+{
+font-size: 14px;
+}
+
+	.offer-buttons-wrapper button
+{
+
+	font-size: 18px;
+
+}
+
+a
+{
+	&:hover
+	{
+		text-shadow: 0 0.5px;
+text-decoration: underline;
+	}
+}
+
+button
+{
+
+	&:hover
+{
+box-shadow: 0 2px 4px 1px grey;
+
+cursor: pointer;
+}
+}
+}button:disabled
+{
+
+	&:hover
+	{
+		box-shadow: 0 0px 0px 0px transparent;
+		cursor: auto;
+	}
+}
+
+
+@media only screen and (min-width: 1400px)
+{
+	.contanier
+	{
+		max-width: 1400px;
+	margin: auto;
+	}
+}
+
+@import "header__animation.scss";
+@import "header.scss";
+@import "offer.scss";
+@import "online-tickets.scss";
+@import "ticket-price";
+@import "videos.scss";
+@import "reasons.scss";
+@import "comment.scss";
+@import "about.scss";
+@import "footer.scss";
+@import "speakers.scss";
+@import "modals.scss";
+@import "my-modal";

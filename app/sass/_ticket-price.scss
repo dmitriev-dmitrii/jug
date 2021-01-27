@@ -1,0 +1,171 @@
+.ticket-price {
+	background: #F8F8F8;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ticket-price__list {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.ticket-price__item {
+	padding: 30px 20px 45px 20px;
+	box-sizing: border-box;
+	min-height: 320px;
+width: 70vw;
+}
+
+.ticket-price__item-title {
+	@include titles-font;
+	font-size: 24px;
+
+}
+.ticket-price__item-subtitle {
+	@include regular-font;
+}
+
+
+.ticket-price__part-wrapper {
+	display: flex;
+	justify-content: space-between;
+	display: flex;
+	height: 100%;
+
+}
+.ticket-price__part {
+
+	flex-direction: column;
+	display: flex;
+	height: 200px;
+	justify-content: space-around;
+	position: relative;
+margin: 0 0.5em;
+
+&:nth-child(1)
+{
+	&::before
+	{content: '';
+		top:20px;
+		left: 0px;
+	background-image: url(../img/one_ticket.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+position: absolute;
+	width: 75px;
+height: 35px;
+	}
+}
+&:nth-child(2)
+{
+	&::before
+	{content: '';
+		top:5px;
+		left: 0px;
+	background-image: url(../img/seven_ticket.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+position: absolute;
+	width: 80px;
+height: 50px;
+	}
+}
+}
+.ticket-price__name {
+	margin-top: 90px;
+}
+.ticket-price__price {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.ticket-price__button {
+margin-top: 25px;
+
+color: rgba(0, 0, 0, 0.7);
+background: #F8F8F8;
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 24px;
+padding: 0.5em 1em;
+width: 70px;
+}
+
+.ticket-price__hr
+{
+	height: 1px ;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+
+@media only screen and (min-width: 576px) {
+
+	.ticket-price__hr
+{
+display: none;
+}
+	.ticket-price {
+		background: transparent;
+		margin-top: 2em;
+	}
+	.ticket-price__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+width: 100%;
+	}
+	.ticket-price__item {
+background: #F8F8F8;
+width: 47%;
+border-radius: 20px;
+	}
+
+	.ticket-price__button {
+		width: 100px;
+					}
+}
+@media only screen and (min-width: 767px)
+{
+
+	.ticket-price__item {
+background: #F8F8F8;
+padding: 40px 40px 55px 40px;
+	}
+	.ticket-price__part {
+
+		&:nth-child(1)
+		{
+			&::before
+			{content: '';
+				top:20px;
+				left: 0px;
+			width: 105px;
+		height: 50px;
+			}
+		}
+		&:nth-child(2)
+		{
+			&::before
+			{content: '';
+				top:5px;
+				left: 0px;
+	
+			width: 110px;
+		height: 70px;
+			}
+		}
+		}
+
+
+}
+@media only screen and (min-width: 1139px)
+{
+	.ticket-price__item 
+	{
+		padding: 40px 50px 55px 50px;
+		width: 35%;
+	}
+	
+}

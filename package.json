@@ -1,0 +1,24 @@
+{
+  "name": "my_gulp",
+  "version": "1.0.0",
+  "description": "dmitriev_dmitrii_gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dmitriev_dmitrii",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "imagemin-pngquant": "^9.0.1",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "del": "^6.0.0"
+  }
+}

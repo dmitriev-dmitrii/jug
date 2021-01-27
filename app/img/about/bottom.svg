@@ -1,0 +1,24 @@
+<svg width="1793" height="411" viewBox="0 0 1793 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1793" height="411">
+<path d="M457.962 211L199 329.332L131 280.5L0.5 411V0H1792.5V329.332L1296.46 259.016L1172.24 329.332L457.962 211Z" fill="#FF0000"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 119 -711.056)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 825.959 -303.185)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1532.92 104.687)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 354.653 -575.099)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1061.61 -167.227)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1768.57 240.645)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 590.306 -439.142)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1297.27 -31.27)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 2004.23 376.602)" fill="white"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 119 -558.784)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 825.959 -150.913)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1532.92 256.959)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 354.653 -422.827)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1061.61 -14.9551)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1768.57 392.917)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 590.306 -286.87)" fill="#FFCC00"/>
+<rect width="136.03" height="885.24" transform="matrix(0.86618 0.499732 -0.500268 0.865871 1297.27 121.002)" fill="#FFCC00"/>
+</g>
+</svg>

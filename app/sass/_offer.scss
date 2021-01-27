@@ -1,0 +1,75 @@
+.offer {
+}
+.offer__title {
+	margin: 30px auto;
+	@include titles-font;
+}
+.offer__ticket {
+	min-width: 280px;
+	min-height: 125px;
+	background-image: url(../img/fullpass_ticket.svg);
+background-size: contain;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 30px auto;
+}
+.offer__button {
+	background: #000000;
+	border-radius: 24px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 122%;
+	color: #ffffff;
+	display: block;
+	outline: none;
+	border: none;
+	margin: 30px auto 0 auto;
+
+}
+.offer__list {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.offer__item {
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 20px;
+	text-align: center;
+	width: 50%;
+height: 50px;
+
+margin: 30px auto 0 auto;
+}
+
+.oofer__item-subtitle {
+	@include regular-font;
+}
+
+
+
+@media only screen and (min-width: 576px) 
+{
+	.offer__ticket {
+		min-width: 465px;
+		min-height: 210px;
+		margin: 30px auto;
+	}
+}
+@media only screen and (min-width: 767px)
+{
+
+@media only screen and (min-width: 991px)
+{
+	.offer-flex
+	{
+		display: flex;justify-content: space-between;
+		align-items: center;
+	}
+}
+}

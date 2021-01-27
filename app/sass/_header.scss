@@ -1,0 +1,108 @@
+
+
+.header {
+overflow: hidden;
+
+}
+
+.header__logo
+{
+margin: 1em 0;
+}
+.logo{
+	height: 40px;
+	width: 111px;
+object-fit: contain;
+}
+
+.header__content {
+margin-top: 200px;
+}
+
+.header__title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 120%;
+}
+.header__subtitle {
+	margin: 2em 0;
+	@include regular-font;
+}
+.header__buttons-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.header__button {
+
+	position: relative;
+
+	&::before {
+		position: absolute;
+	}
+	
+	&:nth-child(1) {
+
+		&::before {
+			content: url(../img/button1.png);
+			height: 34px;
+			width: 34px;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -34px;
+		}
+	}
+	&:nth-child(2) {
+
+		&::before {
+			content: url(../img/button2.png);
+			height: 28px;
+			width: 28px;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -28px;
+		}
+	}
+}
+
+@media only screen and (min-width: 576px) 
+{
+	.header__title {
+		font-size: 36px;
+	}
+
+	.header__buttons-wrapper {
+		justify-content: flex-start;
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+	.header__button{
+		margin: 50px 1em 0 1em;
+	}
+	.header__content {
+		margin-top: 220px;
+		width: 60%;
+		}
+}
+@media only screen and (min-width: 767px)
+{
+	.header__content {
+		margin-top: 120px;
+		width: 50%;
+		}
+}
+@media only screen and (min-width: 991px)
+{
+	.header__content {
+		margin-top: 30px;
+		}
+}
+
+@media only screen and (min-width: 1365px)
+{
+
+		.header__subtitle {
+			max-width: 50%;
+			}
+}

@@ -1,0 +1,95 @@
+.speakers {
+	margin:2em auto;
+}
+
+.speakers__title {
+	text-align: center;
+	@include titles-font;
+display: block;
+margin-bottom: 1em;
+}
+.speakers__list {
+display: grid;
+grid-template-columns: 1fr;
+
+grid-gap: 1em;
+}
+.speakers__item {
+	border-radius: 20px;
+	position: relative;
+box-shadow: 0 7px 7px 1px rgba(128, 128, 128, 0.103);
+}
+
+
+
+.speakers__item-figure {
+	width: 100%;
+	margin: 0;
+}
+.speakers__item-img {
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+	width: 100%;
+background-color: rgba(128, 128, 128, 0.418);
+
+}
+.speakers__item-img-info {
+line-height: 0.4em;
+padding: 0.5em 1em;
+}
+
+.speakers__item-social {
+
+@include regular-font;
+	font-weight: 600;
+
+	color: #000000;
+	padding: 0.5em 0 ;
+position: relative;
+	&:after
+	{
+		content: url(../img/speakers/twitter.svg);
+		height: 30px;
+		width: 30px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%)  translateX(0.6em);
+	}
+}
+
+.speakers__item-work-wrapper {
+	@include regular-font;margin: 0;
+	margin-bottom: 1em;
+}
+.speakers__item-work-about {
+font-style: italic;
+}
+
+
+.speakers__item-about {
+	@include regular-font;
+	padding: 0em 1em 2em 1em;
+}
+
+@media only screen and (min-width: 576px) 
+{
+	.speakers__list {
+
+		grid-template-columns: 1fr 1fr;
+
+		grid-gap: 2em;
+		}
+}
+
+@media only screen and (min-width: 767px)
+{
+
+}
+@media only screen and (min-width: 1139px)
+{
+	.speakers__list {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		}
+
+}
