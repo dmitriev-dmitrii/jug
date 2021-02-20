@@ -1,13 +1,11 @@
 
-
-
-
 .modal-overlay {
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	opacity: 0;
 	visibility: hidden;
+
 }
 .modal {
 
@@ -23,15 +21,15 @@ transform: translateY(-150%);
 .modal-overlay--visible {
 
 	z-index: 6;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	opacity: 1;
 	visibility: visible;
-
 min-height: 100vh;
-min-width: 100vw;
+width:100vw ;
 background-color: #ffffff;
 overflow: hidden;
 
@@ -48,9 +46,10 @@ max-height: 100vh;
 max-width: 1400px;
 
 
-width: 100%;
+width:100vw ;
 
 transform: translateY(0%);
-overflow-y: auto;
+overflow-x: hidden;
+
 }
 

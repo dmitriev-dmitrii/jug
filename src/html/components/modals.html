@@ -1,0 +1,220 @@
+<div class="modals">
+<div class="modal-overlay ">
+
+		<div class="modal modals-wrapper" data-target="form-popup">
+			<div class="modal__whyaway">
+				<div class="modal__whyaway-title">
+					Я не пойду!
+				</div>
+				<div class="modal__whyaway-list">
+					<button class="modal__whyaway-item modal-btn   " data-path="answer1">
+						Вы&nbsp;свои&nbsp;цены&nbsp;видели?</button>
+					<button class="modal__whyaway-item modal-btn"   data-path="answer2">Доклады&nbsp;ни&nbsp;о&nbsp;чем
+					</button>
+					<button class="modal__whyaway-item modal-btn"   data-path="answer3">
+						У&nbsp;вас&nbsp;там&nbsp;всё&nbsp;хорошо?</button>
+					<button class="modal__whyaway-item modal-btn"   data-path="answer4">
+						Денег&nbsp;нет,но&nbsp;вы&nbsp;держитесь</button>
+				</div>
+			</div> 
+
+			<fieldset class="modal__subscribe">
+				<legend class="modal__subscribe-title">Я хочу&nbsp;знать&nbsp;когда <br>будет офлайн.</legend>
+				<div class="modal__subscribe-flex">
+				<input class="modal__subscribe-input" type="email" name="email"
+					pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$"
+					placeholder="Укажите email" minlength="5" maxlength="50">
+				<button disabled="disabled" class="modal__subscribe-btn   " type="submit"
+					name="submit">Подписаться</button>
+				</div>
+				<div class="modal__subscribe-after-click"> Спасибо,&nbsp;что&nbsp;подписались<br>на&nbsp;нашу&nbsp;рассылку!</div>
+				<a class="modal__presonal " href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+					class="modal__underline-grey"> на обработку персональных данных</span></a>
+			</fieldset>
+
+			<button class="modal__goback close__modal  ">Вернуться</button>
+
+			<div class="footer contanier modal__footer">
+
+				<div class="footer__logo"><img src="img/jugru-LOGO.svg" class="logo" alt="JUG.RU logo"></div>
+
+				<div class="footer__social-links">
+
+					<a class="vk" href="#"></a>
+					<a class="fb" href="#"></a>
+					<a class="tw" href="#"></a>
+				</div>
+
+				<div class="footer__links-list">
+					<div class="footer__link-item">
+						<a class="footer__link" href="#"><span class="footer__item-span">Информация</span> <span
+								class="footer__item-span">info@jugru.org</span></a>
+						<a class="footer__link" href="#"><span class="footer__item-span">Поддержка</span> <span
+								class="footer__item-span">support@jugru.org</span></a>
+					</div>
+					<div class="footer__link-item">
+						<a class="footer__link" href="#"><span class="footer__item-span">Офис</span> <span
+								class="footer__item-span">+7&nbsp;812&nbsp;904&nbsp;4212</span></a>
+						<a class="footer__link" href="#"><span class="footer__item-span">Отдел&nbsp;продаж</span>
+							<span class="footer__item-span">+7&nbsp;812&nbsp;904&nbsp;6648</span></a>
+					</div>
+					<div class="footer__link-item">
+						<a class="footer__link" href="#"><span
+								class="footer__item-span">Политика&nbsp;конфиденциальности</span> </a>
+						<a class="footer__link" href="#"><span class="footer__item-span">Нормы&nbsp;поведения</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__trademark">©&nbsp;2012–2020&nbsp;JUG&nbsp;Ru&nbsp;Group.</div>
+			</div>
+		</div>
+
+		<div class="modal" data-target="answer1">
+			<div class="modal__answer-wrapper">
+			<div class="modal__answer">
+				<button class="modal__answer-close-btn   close__modal"></button>
+
+				<div class=" modal__answer-txt">
+					Есть хорошая новость — сейчас цены низкие. Плохая — они растут каждый месяц.
+					<br>
+					<span class="hr__modal"> </span>
+					Если вы уже участвовали в любой конференции JUG Ru Group, у вас есть скидка на Personal-билет.
+					Оставьте свой имейл, мы проверим факт участия и пришлем промокод.
+				</div>
+
+				<div class="modal__answer-input-wrapper">
+					<input class="modal__answer-input" type="email" name="email" placeholder="Укажите email"
+						pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$"
+						minlength="5" maxlength="50">
+					<button class="modal__answer-btn   " disabled="disabled" type="submit"
+						name="submit">Проверить</button>
+					<div class="modal__answer-after-click contanier"> Спасибо! Скоро свяжемся с вами.</div>
+				</div>
+
+				<a class="modal__answer-personal" href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+						class="modal__underline"> на обработку
+						персональных данных</span></a>
+
+		</div>
+		</div>
+		</div>
+
+		<div class="modal" data-target="answer2">
+			<div class="modal__answer-wrapper">
+			<div class="modal__answer">
+				<button class="modal__answer-close-btn   close__modal"></button>
+
+				<div class="modal__answer-txt">
+					Хм… а какие темы и каких спикеров вы бы хотели видеть в программе?
+					<br>
+					<span class="hr__modal"> </span>
+					Расскажите подробнее, пожалуйста. Оставьте свой имейл, мы пришлём вам форму для отзыва о
+					докладах.
+				</div>
+			
+				<div class="modal__answer-input-wrapper">
+					<input class="modal__answer-input" type="email" name="email" placeholder="Укажите email"
+						pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$"
+						 minlength="5" maxlength="50">
+					<button class="modal__answer-btn   " disabled="disabled" type="submit"
+						name="submit">Проверить</button>
+					<div class="modal__answer-after-click contanier  "> Спасибо! Скоро пришлем вам письмо <br>с
+						формой обратной связи.</div>
+				</div>
+				<a class="modal__answer-personal" href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+						class="modal__underline"> на обработку
+						персональных данных</span></a>
+			</div>
+		</div>
+	</div>
+
+		<div class="modal " data-target="answer3">
+			<div class="modal__answer-wrapper">
+			<div class="modal__answer">
+				<button class="modal__answer-close-btn   close__modal"></button>
+
+				<div class="modal__answer-txt">
+					Спасибо! Всё в порядке!
+					<br>
+					<span class="hr__modal"> </span>
+					Чтобы оставаться в курсе наших дел — читайте <a href="#" class="modal__underline">блог на
+						Хабре</a>, телеграм-канал <a href="#" class="modal__underline">@23derevo</a> и
+					подписывайтесь на наши рассылки.
+				</div>
+
+				<div class="modal__answer-input-wrapper">
+					<input class="modal__answer-input" type="email" name="email" 
+						pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$"
+						placeholder="Укажите email" minlength="5" maxlength="50">
+					<button class="modal__answer-btn   " disabled="disabled" type="submit"
+						name="submit">Проверить</button>
+					<div class="modal__answer-after-click contanier"> Спасибо, что подписались <br>на нашу рассылку!
+					</div>
+				</div>
+				<a class="modal__answer-personal" href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+						class="modal__underline"> на обработку
+						персональных данных</span></a>
+			</div>
+		</div>
+	</div>
+		<div class="modal " data-target="answer4">
+			<div class="modal__answer-wrapper">
+			<div class="modal__answer">
+				<button class="modal__answer-close-btn   close__modal"></button>
+
+				<div class="modal__answer-txt">
+					Благодарим за поддержку!
+					<br>
+					<span class="hr__modal"> </span>
+					Если вы уже участвовали в любой конференции JUG Ru Group, у вас есть скидка на Personal-билет.
+					Оставьте свой имейл, мы проверим факт участия и дадим промокод.
+				</div>
+
+				<div class="modal__answer-input-wrapper">
+					<input class="modal__answer-input" type="email" name="email" placeholder="Укажите email"
+						pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$"
+					 minlength="5" maxlength="50">
+					<button class="modal__answer-btn   " disabled="disabled" type="submit"
+						name="submit">Проверить</button>
+					<div class="modal__answer-after-click contanier "> Спасибо! Скоро свяжемся с вами.</div>
+				</div>
+				<a class="modal__answer-personal" href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+						class="modal__underline"> на обработку
+						персональных данных</span></a>
+			</div>
+		</div>
+	</div>
+
+		<div class="modal " data-target="form-call-back">
+			<div class="modal__call-back">
+				<button class="modal__call-back-close-btn   close__modal"></button>
+
+				<fieldset class="modal__call-back-body">
+					<legend class="modal__call-back-title">Мененеджер вам все расскажет!</legend>
+					<div class="modal__call-back-flex">
+
+
+						<input  class="modal__call-back-input " placeholder="Укажите телефон"  type="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11"  maxlength="12">	
+						
+						<input class="modal__call-back-input" type="text" name="name"
+						
+						placeholder="Ваше Имя" minlength="2"  maxlength="50">
+
+					<button disabled="disabled" class="modal__call-back-btn   " type="submit"
+						name="submit">Отправить</button>
+					</div>
+					<div class="modal__call-back-after-click"> Спасибо,скоро&nbsp;перезвоним&nbsp;вам!</div>
+
+				</fieldset>
+
+				<a class="modal__personal-call-back" href="#">Нажимая на кнопку, вы соглашаетесь <br><span
+						class="modal__underline"> на обработку
+						персональных данных</span></a>
+			</div>
+		</div>
+
+</div>
+</div>
+
+

@@ -324,16 +324,22 @@ cursor: pointer;
 	}
 }
 
-@import "header__animation.scss";
-@import "header.scss";
-@import "offer.scss";
-@import "online-tickets.scss";
-@import "ticket-price";
-@import "videos.scss";
-@import "reasons.scss";
-@import "comment.scss";
-@import "about.scss";
-@import "footer.scss";
-@import "speakers.scss";
-@import "modals.scss";
-@import "my-modal";
+@import "global/normalize.scss";
+
+// @import "global/header.scss";
+// @import "global/offer.scss";
+
+@import "block/header__animation.scss";
+@import "block/header.scss";
+@import "block/offer.scss";
+@import "block/online-tickets.scss";
+@import "block/ticket-price";
+@import "block/videos.scss";
+@import "block/reasons.scss";
+@import "block/comment.scss";
+@import "block/about.scss";
+@import "block/footer.scss";
+@import "block/speakers.scss";
+
+@import "components/modals.scss";
+@import "components/my-modal";

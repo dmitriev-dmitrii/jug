@@ -1,11 +1,9 @@
 
-
 .modals-wrapper
 {
 padding-top: 1em;
 
 }
-
 .modal__whyaway {
 	background-color: #fff;
 }
@@ -77,6 +75,7 @@ align-self: start;
 	}
 
 .modal__goback {
+	
 	@include regular-font;
 
 	text-align: center;
@@ -100,7 +99,6 @@ font-weight: bold;
 		height: 1.3em;
 		width: 1.3em;
 	}
-
 
 }
 
@@ -184,23 +182,29 @@ color: #fff;
 	justify-content: center;
 
 }
+.modal__answer-wrapper
+{
 
+	padding: 0.5em;
+	background-color:transparent;
+
+}
 
 .modal__answer {
+	margin:0 auto;
 	padding: 1em;
 	background-color: #000000;
 	border-radius: 20px;
 	@include regular-font;
 	color: #fff;
-
-	min-width: 280px;
 	max-width: 650px;
 	overflow: hidden;
-margin: 0 auto;
+
 display: flex;
 flex-direction: column;
 position: relative;
 }
+
 .modal__answer-close-btn
 {
 margin-bottom: 0.5em;
@@ -213,6 +217,7 @@ align-self: flex-end;
 position: relative;
 cursor: pointer;
 transition: all 0.4s linear;
+background: #777;
 
 &::after,&::before
 {
@@ -222,7 +227,7 @@ transition: all 0.4s linear;
 	background-color: #000000;
 	position: absolute;
 	top: 50%;
-	box-shadow: 0 0 1px 0px red;
+	box-shadow: 0 0 1px 0px rgb(187, 255, 0);
 }
 &::after
 {
