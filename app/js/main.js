@@ -57,7 +57,6 @@ btn.addEventListener('click', function name()
 
 
 
-
 // Модальные окна
 
 const modalBtn = document.querySelectorAll('.modal-btn');
@@ -111,9 +110,7 @@ modalBtn.forEach((el) => {
 });
 
 
-
 // патерн для поля инпут емаайла
-
 
 
 const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -152,13 +149,10 @@ function checkValidEmail() {
 
 	{
 
-		
-	
 		EmailInput.classList.add('modal__subscribe-input--active');
 		EmailSubmit.classList.add('modal__subscribe-btn--active');
 		EmailSubmit.removeAttribute("disabled");
 	}
-
 
 
 };
@@ -190,7 +184,6 @@ transform: translateX(0%) translateY(-50%);
 `;
 
 }
-
 
 // Проверка инпута остальных
 
