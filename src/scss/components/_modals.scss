@@ -144,6 +144,7 @@ right: 1em;
 	align-self: flex-end;
 	position: relative;
 	cursor: pointer;
+	background-color: #999;
 	transition: all 0.4s linear;
 	&::after,&::before
 	{
@@ -182,7 +183,7 @@ color: #fff;
 	justify-content: center;
 
 }
-.modal__answer-wrapper
+.modal__wrapper
 {
 
 	padding: 0.5em;

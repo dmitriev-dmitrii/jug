@@ -34,37 +34,7 @@ margin-top: 200px;
 	justify-content: space-between;
 	margin-top: 50px;
 }
-.header__button {
 
-	position: relative;
-
-	&::before {
-		position: absolute;
-	}
-	
-	&:nth-child(1) {
-
-		&::before {
-			content: url(../img/button1.png);
-			height: 34px;
-			width: 34px;
-			left: 50%;
-			transform: translateX(-50%);
-			top: -34px;
-		}
-	}
-	&:nth-child(2) {
-
-		&::before {
-			content: url(../img/button2.png);
-			height: 28px;
-			width: 28px;
-			left: 50%;
-			transform: translateX(-50%);
-			top: -28px;
-		}
-	}
-}
 
 @media only screen and (min-width: 576px) 
 {

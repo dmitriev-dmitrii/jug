@@ -103,6 +103,7 @@ button:active {
   font-weight: normal;
   line-height: 150%;
   font-size: 12px;
+  position: relative;
 }
 
 .offer-buttons-wrapper button:nth-child(1) {
@@ -113,6 +114,32 @@ button:active {
 .offer-buttons-wrapper button:nth-child(2) {
   background: #000000;
   color: #ffffff;
+}
+
+.offer-buttons-wrapper button::before {
+  position: absolute;
+}
+
+.offer-buttons-wrapper button:nth-child(1)::before {
+  content: url(../img/button1.png);
+  height: 34px;
+  width: 34px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -34px;
+}
+
+.offer-buttons-wrapper button:nth-child(2)::before {
+  content: url(../img/button2.png);
+  height: 28px;
+  width: 28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -28px;
 }
 
 .modal__presonal,
@@ -835,36 +862,6 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
-}
-
-.header__button {
-  position: relative;
-}
-
-.header__button::before {
-  position: absolute;
-}
-
-.header__button:nth-child(1)::before {
-  content: url(../img/button1.png);
-  height: 34px;
-  width: 34px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -34px;
-}
-
-.header__button:nth-child(2)::before {
-  content: url(../img/button2.png);
-  height: 28px;
-  width: 28px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -28px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -2797,6 +2794,7 @@ template {
       align-self: flex-end;
   position: relative;
   cursor: pointer;
+  background-color: #999;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -2848,7 +2846,7 @@ template {
           justify-content: center;
 }
 
-.modal__answer-wrapper {
+.modal__wrapper {
   padding: 0.5em;
   background-color: transparent;
 }

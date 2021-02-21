@@ -49,9 +49,9 @@
         <br>С вас - готовность смотреть и общаться.
       </p>
 
-      <div class="header__buttons-wrapper offer-buttons-wrapper">
-        <button class="header__button modal-btn" data-path="form-call-back">Купить&nbsp;билет</button>
-        <button class="header__button modal-btn" data-path="form-popup">Я&nbsp;не&nbsp;пойду!</button>
+      <div class=" offer-buttons-wrapper">
+        <button class=" modal-btn" data-path="form-call-back">Купить&nbsp;билет</button>
+        <button class=" modal-btn" data-path="form-popup">Я&nbsp;не&nbsp;пойду!</button>
       </div>
 
     </div>
@@ -261,7 +261,7 @@
     <button class=" hide__btn   ">показать еще</button>
 
     <div class="bottom__buttons-wrapper offer-buttons-wrapper ">
-      <button class="header__button modal-btn" data-path="form-call-back">Убедили,&nbsp;беру. </button>
+      <button class=" modal-btn" data-path="form-call-back">Убедили,&nbsp;беру. </button>
       <button class=" modal-btn" data-path="form-popup">Плохие&nbsp;спикеры!</button>
     </div>
 
@@ -565,7 +565,7 @@
     </div>
     <div class=" offer-buttons-wrapper">
 
-      <button class="header__button modal-btn" data-path="form-call-back">Я&nbsp;иду</button>
+      <button class="modal-btn" data-path="form-call-back">Я&nbsp;иду</button>
       <button class=" modal-btn" data-path="form-popup">Мне&nbsp;не&nbsp;нравится!</button>
     </div>
   </section>
@@ -784,7 +784,7 @@
       </div>
 
       <div class="modal" data-target="answer1">
-        <div class="modal__answer-wrapper">
+        <div class="modal__wrapper">
           <div class="modal__answer">
             <button class="modal__answer-close-btn   close__modal"></button>
 
@@ -813,7 +813,7 @@
       </div>
 
       <div class="modal" data-target="answer2">
-        <div class="modal__answer-wrapper">
+        <div class="modal__wrapper">
           <div class="modal__answer">
             <button class="modal__answer-close-btn   close__modal"></button>
 
@@ -843,7 +843,7 @@
       </div>
 
       <div class="modal " data-target="answer3">
-        <div class="modal__answer-wrapper">
+        <div class="modal__wrapper">
           <div class="modal__answer">
             <button class="modal__answer-close-btn   close__modal"></button>
 
@@ -872,7 +872,7 @@
         </div>
       </div>
       <div class="modal " data-target="answer4">
-        <div class="modal__answer-wrapper">
+        <div class="modal__wrapper">
           <div class="modal__answer">
             <button class="modal__answer-close-btn   close__modal"></button>
 
@@ -899,32 +899,33 @@
       </div>
 
       <div class="modal " data-target="form-call-back">
-        <div class="modal__call-back">
-          <button class="modal__call-back-close-btn   close__modal"></button>
+        <div class="modal__wrapper">
+          <div class="modal__call-back">
+            <button class="modal__call-back-close-btn   close__modal"></button>
 
-          <fieldset class="modal__call-back-body">
-            <legend class="modal__call-back-title">Мененеджер вам все расскажет!</legend>
-            <div class="modal__call-back-flex">
+            <fieldset class="modal__call-back-body">
+              <legend class="modal__call-back-title">Мененеджер вам все расскажет!</legend>
+              <div class="modal__call-back-flex">
 
 
-              <input class="modal__call-back-input " placeholder="Укажите телефон" type="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="12">
+                <input class="modal__call-back-input " placeholder="Укажите телефон" type="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="12">
 
-              <input class="modal__call-back-input" type="text" name="name" placeholder="Ваше Имя" minlength="2" maxlength="50">
+                <input class="modal__call-back-input" type="text" name="name" placeholder="Ваше Имя" minlength="2" maxlength="50">
 
-              <button disabled="disabled" class="modal__call-back-btn   " type="submit" name="submit">Отправить</button>
-            </div>
-            <div class="modal__call-back-after-click"> Спасибо,скоро&nbsp;перезвоним&nbsp;вам!</div>
+                <button disabled="disabled" class="modal__call-back-btn   " type="submit" name="submit">Отправить</button>
+              </div>
+              <div class="modal__call-back-after-click"> Спасибо,скоро&nbsp;перезвоним&nbsp;вам!</div>
 
-          </fieldset>
+            </fieldset>
 
-          <a class="modal__personal-call-back" href="#">Нажимая на кнопку, вы соглашаетесь
-            <br>
-            <span class="modal__underline"> на обработку
-              персональных данных</span>
-          </a>
+            <a class="modal__personal-call-back" href="#">Нажимая на кнопку, вы соглашаетесь
+              <br>
+              <span class="modal__underline"> на обработку
+                персональных данных</span>
+            </a>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 

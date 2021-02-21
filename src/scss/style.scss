@@ -92,6 +92,7 @@ box-shadow: 0 2px 3px 1px grey;
 		font-weight: normal;
 		line-height: 150%;
 		font-size: 12px;
+
 		&:nth-child(1) {
 			background: #fbcb03;
 			color: #000000;
@@ -101,7 +102,34 @@ box-shadow: 0 2px 3px 1px grey;
 			background: #000000;
 			color: #ffffff;
 		}
+	position: relative;
 
+	&::before {
+		position: absolute;
+	}
+	
+	&:nth-child(1) {
+
+		&::before {
+			content: url(../img/button1.png);
+			height: 34px;
+			width: 34px;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -34px;
+		}
+	}
+	&:nth-child(2) {
+
+		&::before {
+			content: url(../img/button2.png);
+			height: 28px;
+			width: 28px;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -28px;
+		}
+	}
 }
 
 
@@ -325,9 +353,6 @@ cursor: pointer;
 }
 
 @import "global/normalize.scss";
-
-// @import "global/header.scss";
-// @import "global/offer.scss";
 
 @import "block/header__animation.scss";
 @import "block/header.scss";
